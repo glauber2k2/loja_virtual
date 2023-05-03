@@ -14,13 +14,14 @@ export default function Account() {
     <main className={styles.container}>
       <div className={styles.containerImages}>
         <h1>E-Commerce</h1>
+        <p>Aqui vai todo conteudo de CTA e Apresentação.</p>
         <div className={styles.images}></div>
       </div>
       <div>
         <div className={auth ? styles.selectLogin : styles.selectRegister}>
           <button onClick={handleChangeAuth}>
             {auth ? 'Cadastrar' : 'Logar'}
-          </button>{' '}
+          </button>
         </div>
         {auth ? <Login /> : <Register />}
       </div>

@@ -53,14 +53,6 @@
   margin-left: -2em;
 }
 
-.containerImages {
-  padding: 5em;
-  width: 100%;
-  min-height: 70vh;
-  background-color: #fafafa;
-  border-radius: 50px;
-}
-
 .redeLogin {
   display: flex;
   justify-content: center;

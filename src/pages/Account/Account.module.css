@@ -1,4 +1,6 @@
 .container {
+  height: 90vh;
+  background-color: #fdfcfc;
   display: flex;
   justify-content: space-around;
   gap: 5em;
@@ -6,11 +8,9 @@
 }
 
 .containerImages {
-  padding: 5em;
   width: 100%;
-  min-height: 70vh;
-  background-color: #fafafa;
-  border-radius: 50px;
+  height: 60vh;
+  border-right: 2px solid rgba(3, 3, 3, 0.281);
 }
 
 .selectLogin {
