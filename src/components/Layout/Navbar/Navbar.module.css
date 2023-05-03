@@ -1,0 +1,37 @@
+.navbar_container {
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  display: flex;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  background-color: #222;
+  padding: 0.3em;
+  border-radius: 15px;
+}
+
+.search input {
+  width: 25em;
+  padding-inline: 0.5em;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: bold;
+}

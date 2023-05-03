@@ -1,0 +1,70 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.form input {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
+  border: none;
+  padding-inline: 2em;
+  width: 30em;
+  height: 3em;
+  margin-top: 2em;
+  border-radius: 10px;
+}
+
+.form input[type='submit'] {
+  color: #fff;
+  background-color: #0066ff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.form input[type='submit']:hover {
+  background-color: #5e89fd;
+}
+
+.form input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form a {
+  width: 100%;
+  margin-top: 0.2em;
+  font-size: 12px;
+  text-align: end;
+  color: #3e8bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container h4 {
+  color: #dadada;
+  text-align: center;
+  border-bottom: solid 1px #f1f1f1;
+  margin-bottom: 2em;
+}
+
+.showPassword {
+  background-color: transparent;
+  border: none;
+  margin-left: -2em;
+}
+
+.redeLogin {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.redeLogin span {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 10em;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  border-radius: 10px;
+}

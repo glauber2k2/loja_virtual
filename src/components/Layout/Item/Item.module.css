@@ -1,0 +1,12 @@
+.container_item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_item h3 {
+  width: 100%;
+}
+.container_item h3 span {
+  float: right;
+}
