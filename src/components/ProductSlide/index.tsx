@@ -39,7 +39,7 @@ export default function ProductSlide({ title }: slideProps) {
             <div className='keen-slider__slide'>
               <Item
                 src='https://m.media-amazon.com/images/I/61xSpcGMUhL.__AC_SX300_SY300_QL70_ML2_.jpg'
-                name='Monitor Gamer 75hz'
+                name='Monitor '
                 price='1.200'
                 alt='teste'
                 id='1'
@@ -69,7 +69,7 @@ export default function ProductSlide({ title }: slideProps) {
             <div className='keen-slider__slide'>
               <Item
                 src='https://m.media-amazon.com/images/I/61QUveKcmIL._AC_SX522_.jpg'
-                name='Monitor Ultrawide'
+                name='Monitor'
                 price='1.500'
                 alt='teste'
                 id='1'

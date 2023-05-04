@@ -4,7 +4,7 @@ import styles from './Item.module.css';
 
 interface ItemProps {
   src: string;
-  price: number;
+  price: string;
   name: string;
   alt: string;
   id: string;
@@ -14,7 +14,7 @@ export default function Item({ src, price, name, alt, id }: ItemProps) {
   return (
     <div className={styles.container_item}>
       <div className={styles.imageContainer}>
-        <img src={src} alt={alt} />
+        <Image src={src} alt={alt} width={420} height={420} />
       </div>
 
       <h3>
