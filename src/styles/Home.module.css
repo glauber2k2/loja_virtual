@@ -12,6 +12,18 @@
   width: 70%;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.about img {
+  width: 25em;
+  height: 20em;
+}
+
 @media (max-width: 768px) {
   .products {
     display: flex;
@@ -19,5 +31,22 @@
     align-items: center;
     margin: auto;
     width: 90%;
+  }
+
+  .about {
+    padding: 1em;
+  }
+
+  .about img {
+    width: 15em;
+    height: 10em;
+  }
+
+  .about h1 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 12px;
   }
 }

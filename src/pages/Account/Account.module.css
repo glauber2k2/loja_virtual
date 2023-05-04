@@ -1,5 +1,5 @@
 .container {
-  height: 90vh;
+  height: 100%;
   background-color: #fdfcfc;
   display: flex;
   justify-content: space-around;
@@ -42,4 +42,22 @@
   width: 50%;
   height: 3em;
   border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .containerImages {
+    display: none;
+  }
+
+  .selectLogin {
+    width: 100%;
+  }
+
+  .selectRegister {
+    width: 100%;
+  }
+
+  .container {
+    padding: 1.5em;
+  }
 }

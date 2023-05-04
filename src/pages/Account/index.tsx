@@ -17,7 +17,7 @@ export default function Account() {
         <p>Aqui vai todo conteudo de CTA e Apresentação.</p>
         <div className={styles.images}></div>
       </div>
-      <div>
+      <div className={styles.auth}>
         <div className={auth ? styles.selectLogin : styles.selectRegister}>
           <button onClick={handleChangeAuth}>
             {auth ? 'Cadastrar' : 'Logar'}

@@ -1,7 +1,7 @@
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
-import Navbar from '../components/Layout/Navbar';
+import Image from 'next/image';
 
 import styles from '../styles/Home.module.css';
 import ProductSlide from '@/components/ProductSlide';
@@ -19,6 +19,15 @@ export default function Home() {
 
   return (
     <>
+      <div className={styles.about}>
+        <Image src='/images/logo.png' width={420} height={420} alt='' />
+        <main>
+          <h1>E-Commerce</h1>
+          <article>
+            <p> Aqui você iá encontrar tudo que precisa, e naquele precinho.</p>
+          </article>
+        </main>
+      </div>
       <ProductSlide title='Top vendas' />
       <ProductSlide title='Calçados' />
       <ProductSlide title='Mais vendidos:' />
