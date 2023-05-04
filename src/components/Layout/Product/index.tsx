@@ -9,7 +9,7 @@ interface ItemProps {
   alt: string;
 }
 
-export default function Item({ src, price, name, alt }: ItemProps) {
+export default function Product({ src, price, name, alt }: ItemProps) {
   return (
     <div className={styles.container_item}>
       <div className={styles.imageContainer}>
