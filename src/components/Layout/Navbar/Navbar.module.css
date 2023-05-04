@@ -36,3 +36,33 @@
   font-weight: bold;
   margin-right: 3em;
 }
+
+@media (max-width: 768px) {
+  .navbar_container {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .navbar_container svg {
+    width: 1.5em;
+  }
+
+  .title h1 {
+    display: none;
+  }
+
+  .search input {
+    width: 7em;
+    padding-inline: 0.5em;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+  }
+
+  .user a {
+    font-size: 12px;
+    margin-right: 1em;
+  }
+}
