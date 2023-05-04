@@ -1,6 +1,5 @@
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-
 import Item from '../Layout/Item';
 
 import styles from './ProductSlide.module.css';
