@@ -1,7 +1,7 @@
 .container h1 {
   display: flex;
   justify-content: center;
-  margin: 3% 0;
+  margin: 5% 0 2% 0;
 }
 
 .products {
@@ -19,5 +19,8 @@
     align-items: center;
     margin: auto;
     width: 90%;
+  }
+  .container h1 {
+    font-size: 20px;
   }
 }

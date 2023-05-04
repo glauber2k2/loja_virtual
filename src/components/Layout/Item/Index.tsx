@@ -4,7 +4,7 @@ import styles from './Item.module.css';
 
 interface ItemProps {
   src: string;
-  price: number;
+  price: string;
   name: string;
   alt: string;
   id: string;

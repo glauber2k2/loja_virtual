@@ -1,5 +1,12 @@
-import { User, ShoppingCartSimple, MagnifyingGlass } from 'phosphor-react';
+import {
+  User,
+  ShoppingCartSimple,
+  MagnifyingGlass,
+  Question,
+} from 'phosphor-react';
+
 import Link from 'next/link';
+import Image from 'next/image';
 
 import styles from './Navbar.module.css';
 
@@ -8,7 +15,7 @@ export default function Navbar() {
     <nav className={styles.navbar_container}>
       <Link href='/' legacyBehavior>
         <div className={styles.title}>
-          <ShoppingCartSimple size={32} color='#0066ff' weight='bold' />
+          <Image src='/images/logo.png' width={720} height={720} alt='' />
           <h1>E-commerce</h1>
         </div>
       </Link>
@@ -17,14 +24,25 @@ export default function Navbar() {
         <input type='text' id='search' placeholder='Buscar...' />
       </div>
       <div className={styles.user}>
-        <User size={32} color='#0066ff' weight='bold' />
         <Link href='/Account' legacyBehavior>
-          <a>Entrar</a>
+          <a>
+            <Question size={32} color='#0066ff' weight='bold' />
+            <p>Suporte</p>
+          </a>
         </Link>
 
-        <ShoppingCartSimple size={32} color='#0066ff' weight='bold' />
         <Link href='/Account' legacyBehavior>
-          <a>Carrinho</a>
+          <a>
+            <ShoppingCartSimple size={32} color='#0066ff' weight='bold' />
+            <p>Carrinho</p>
+          </a>
+        </Link>
+
+        <Link href='/Account' legacyBehavior>
+          <a>
+            <User size={32} color='#0066ff' weight='bold' />
+            <p>Entrar</p>
+          </a>
         </Link>
       </div>
     </nav>
