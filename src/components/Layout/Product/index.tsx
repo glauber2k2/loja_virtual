@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import styles from './Item.module.css';
+import styles from './Product.module.css';
 
 interface ItemProps {
   src: string;
