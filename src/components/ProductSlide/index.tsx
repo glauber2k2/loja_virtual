@@ -31,7 +31,6 @@ export default function ProductSlide({ title }: slideProps) {
                 name='Sapato Vans'
                 price='599'
                 alt='teste'
-                id='1'
               />
             </div>
 
@@ -41,7 +40,6 @@ export default function ProductSlide({ title }: slideProps) {
                 name='Monitor '
                 price='1.200'
                 alt='teste'
-                id='1'
               />
             </div>
 
@@ -51,7 +49,6 @@ export default function ProductSlide({ title }: slideProps) {
                 name='SSD Kingston'
                 price='500'
                 alt='teste'
-                id='1'
               />
             </div>
 
@@ -61,7 +58,6 @@ export default function ProductSlide({ title }: slideProps) {
                 name='Impressora'
                 price='1.100'
                 alt='teste'
-                id='1'
               />
             </div>
 
@@ -71,7 +67,6 @@ export default function ProductSlide({ title }: slideProps) {
                 name='Monitor'
                 price='1.500'
                 alt='teste'
-                id='1'
               />
             </div>
 
@@ -81,7 +76,6 @@ export default function ProductSlide({ title }: slideProps) {
                 name='Kit Periféricos'
                 price='200'
                 alt='teste'
-                id='1'
               />
             </div>
           </div>
