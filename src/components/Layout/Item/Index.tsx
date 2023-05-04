@@ -7,7 +7,7 @@ interface ItemProps {
   price: string;
   name: string;
   alt: string;
-  id: string;
+  id?: string;
 }
 
 export default function Item({ src, price, name, alt, id }: ItemProps) {
