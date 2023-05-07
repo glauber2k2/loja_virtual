@@ -1,0 +1,19 @@
+.message_container {
+  display: flex;
+  text-align: center;
+  height: 2em;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0800;
+  color: aliceblue;
+  border-radius: 10px;
+  opacity: 20%;
+}
+
+.success {
+  background-color: green;
+}
+
+.failed {
+  background-color: #ff0800;
+}

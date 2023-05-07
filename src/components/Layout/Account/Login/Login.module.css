@@ -20,6 +20,7 @@
   background-color: #0066ff;
   cursor: pointer;
   transition: 0.5s;
+  font-weight: bold;
 }
 
 .form input[type='submit']:hover {

@@ -15,7 +15,6 @@
 
 .selectLogin {
   display: flex;
-  justify-content: flex-start;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 0.3em;
   border-radius: 15px;
@@ -23,25 +22,33 @@
   margin-bottom: 1em;
 }
 
-.selectRegister {
-  display: flex;
-  justify-content: flex-end;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 0.3em;
-  border-radius: 15px;
-  background-color: #f1f1f1;
-  margin-bottom: 1em;
-}
-
-.selectLogin button,
-.selectRegister button {
+.selectLogin button {
+  color: #0000007a;
+  font-size: 15px;
   cursor: pointer;
-  border: 2px solid #d6d6d6;
-  background-color: #fff;
   font-weight: bold;
   width: 50%;
   height: 3em;
+  border: none;
+  background: transparent;
+}
+
+.selectLogin p {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 50%;
+  height: 3em;
+  border: 2px solid #d6d6d6;
+  background-color: #fff;
   border-radius: 15px;
+  user-select: none;
+}
+
+.btnLogin {
+  order: 1;
 }
 
 @media (max-width: 768px) {

@@ -1,10 +1,14 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 import styles from './Account.module.css';
 import Login from '../../components/Layout/Account/Login';
 import Register from '../../components/Layout/Account/Register';
+import Message from '@/components/Layout/Message';
 
 export default function Account() {
+  const router = useRouter();
+  const message = router.query.message as string;
   const [auth, setAuth] = useState(true);
 
   function handleChangeAuth() {
@@ -18,11 +22,17 @@ export default function Account() {
         <div className={styles.images}></div>
       </div>
       <div className={styles.auth}>
-        <div className={auth ? styles.selectLogin : styles.selectRegister}>
-          <button onClick={handleChangeAuth}>
+        <div className={styles.selectLogin}>
+          <button
+            onClick={handleChangeAuth}
+            className={auth ? styles.btnLogin : styles.none}
+          >
             {auth ? 'Cadastrar' : 'Logar'}
           </button>
+
+          <p> {auth ? 'Logar' : 'Cadastrar'}</p>
         </div>
+        {message && <Message text={message} type='success' />}
         {auth ? <Login /> : <Register />}
       </div>
     </main>

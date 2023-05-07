@@ -3,6 +3,7 @@ import {
   ShoppingCartSimple,
   MagnifyingGlass,
   Question,
+  Heart,
 } from 'phosphor-react';
 
 import Link from 'next/link';
@@ -31,10 +32,17 @@ export default function Navbar() {
           </a>
         </Link>
 
-        <Link href='/Account' legacyBehavior>
+        <Link href='/ShoppingCart' legacyBehavior>
           <a>
             <ShoppingCartSimple size={32} color='#0066ff' weight='bold' />
             <p>Carrinho</p>
+          </a>
+        </Link>
+
+        <Link href='/ShoppingCart' legacyBehavior>
+          <a>
+            <Heart size={32} color='#0066ff' weight='bold' />
+            <p>Favoritos</p>
           </a>
         </Link>
 
