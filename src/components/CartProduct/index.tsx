@@ -4,14 +4,14 @@ import Image from 'next/image';
 import styles from './CartProduct.module.css';
 
 export default function CartProduct() {
-  const [qtd, setQtd] = useState(1);
+  const [qtd, setQtd] = useState<number>(1);
 
-  function handleChange(e) {
-    setQtd(e.target.value);
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    setQtd(Number(e.target.value));
   }
 
-  function handleBlur(e) {
-    if (e.target.value < 0) {
+  function handleBlur(e: React.FocusEvent<HTMLInputElement>) {
+    if (Number(e.target.value) < 0) {
       setQtd(0);
     }
   }
