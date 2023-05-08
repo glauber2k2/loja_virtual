@@ -22,6 +22,10 @@
   user-select: none;
 }
 
+.quantity input[type='number']:focus {
+  outline: none;
+}
+
 .quantity button {
   font-weight: bold;
   color: red;

@@ -39,7 +39,7 @@ export default function Navbar() {
           </a>
         </Link>
 
-        <Link href='/ShoppingCart' legacyBehavior>
+        <Link href='/Favorites' legacyBehavior>
           <a>
             <Heart size={32} color='#0066ff' weight='bold' />
             <p>Favoritos</p>

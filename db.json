@@ -2,348 +2,90 @@
   "users": [
     {
       "name": "Glauber Monteiro",
-      "lastName": "",
-      "password": "1234567",
-      "email": "glauber072009@gmail.com",
+      "password": "123456",
+      "email": "devglaubermonteiro@gmail.com",
       "userName": "glauber.sm",
+      "favorites": [
+        {
+          "id": 1
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 7
+        }
+      ],
+      "shoppingCart": [],
       "id": 1
-    },
+    }
+  ],
+
+  "products": [
     {
-      "name": "Glauber Monteiro",
-      "lastName": "",
-      "password": "12312311",
-      "email": "aaaaaaaaaa@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 2
+      "id": 1,
+      "name": "Keychron k3 v2",
+      "photoUrl": "https://m.media-amazon.com/images/I/71KT0A6-cjL._AC_SX679_.jpg",
+      "price": 799,
+      "qtd": 500,
+      "description": "Keychron Teclado mecânico K3 versão 2, 84 teclas, ultrafino, sem fio, Bluetooth/USB com fio com retroiluminação de LED branco, interruptor mecânico marrom Gateron de baixo perfil compatível com Mac Windows"
     },
+
     {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 3
+      "id": 2,
+      "name": "Mouse Pad",
+      "photoUrl": "https://m.media-amazon.com/images/I/4140yn-0-eS._AC_.jpg",
+      "price": 150,
+      "qtd": 500,
+      "description": "Controle Dualshock 4 - PlayStation 4 - Preto"
     },
+
     {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 4
+      "id": 3,
+      "name": "Monitor Gamer",
+      "photoUrl": "https://m.media-amazon.com/images/I/612wOq29kKL._AC_SL1000_.jpg",
+      "price": 1500,
+      "qtd": 500,
+      "description": "Produto de excelente qualidade"
     },
+
     {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 5
+      "id": 4,
+      "name": "Lego",
+      "photoUrl": "https://m.media-amazon.com/images/I/81AMRnY9HIL._AC_SX522_.jpg",
+      "price": 200,
+      "qtd": 500,
+      "description": "Produto de excelente qualidade"
     },
+
     {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 6
+      "id": 5,
+      "name": "Controle Dualshock 4 - PlayStation 4 - Preto",
+      "photoUrl": "https://m.media-amazon.com/images/I/51Ieq0twp+L._AC_SX522_.jpg",
+      "price": 799,
+      "qtd": 500,
+      "description": "Produto de excelente qualidade"
     },
+
     {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 7
+      "id": 6,
+      "name": "Adaptador Bluetooth para PC",
+      "photoUrl": "https://m.media-amazon.com/images/I/61Xh3RM3KFL._AC_SX679_.jpg",
+      "price": 150,
+      "qtd": 500,
+      "description": "Receptor Dongle Bluetooth 5.0 Adaptador sem fio para laptop compatível com Windows 10/8.1/8/7/XP para desktop, laptop, mouse, teclado, impressoras, fones de ouvido, alto-falantes"
     },
+
     {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 8
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sma",
-      "id": 9
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sma",
-      "id": 10
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sma",
-      "id": 11
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sma",
-      "id": 12
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sma",
-      "id": 13
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sma",
-      "id": 14
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 15
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 16
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 17
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 18
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 19
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 20
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 21
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 22
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 23
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 24
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 25
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 26
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 27
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 28
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 29
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 30
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glauber.sm",
-      "id": 31
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 32
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 33
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 34
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 35
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 36
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 37
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 38
-    },
-    {
-      "name": "aaa",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 39
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 40
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 41
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 42
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 43
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 44
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 45
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 46
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "aaaaaaaa",
-      "id": 47
-    },
-    {
-      "name": "Glauber Monteiro",
-      "password": "aaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 48
-    },
-    {
-      "name": "Donate",
-      "password": "aaaaaa",
-      "email": "glauber072009@gmail.com",
-      "userName": "glessiane1",
-      "id": 49
+      "id": 7,
+      "name": "iClamper Energia 5 Tomadas - Filtro de Linha",
+      "photoUrl": "https://m.media-amazon.com/images/I/618MnyaygUL._AC_SX522_.jpg",
+      "price": 1500,
+      "qtd": 500,
+      "description": " Filtro de Linha + DPS - Preto, Comprimento do cabo de entrada: 1 m"
     }
   ]
 }

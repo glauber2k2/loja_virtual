@@ -8,7 +8,10 @@ import Message from '@/components/Layout/Message';
 
 export default function Account() {
   const router = useRouter();
-  const message = router.query.message as string;
+  let message = '';
+  if (router.query) {
+    router.query.message as string;
+  }
   const [auth, setAuth] = useState(true);
 
   function handleChangeAuth() {

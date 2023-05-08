@@ -35,7 +35,6 @@ export default function Register() {
 
   function postUser(event: React.FormEvent<HTMLFormElement>, user: userProps) {
     event.preventDefault();
-
     if (
       user.user == '' ||
       user.name == '' ||
@@ -62,6 +61,8 @@ export default function Register() {
           password: user.password,
           email: user.email,
           userName: user.user,
+          favorites: [],
+          shoppingCart: [],
         }),
       })
         .then((resp) => resp.json())

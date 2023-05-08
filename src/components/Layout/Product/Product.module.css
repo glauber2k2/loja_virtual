@@ -23,8 +23,8 @@
 }
 
 .container_item img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  object-fit: scale-down;
 }
 
 @media (max-width: 768px) {

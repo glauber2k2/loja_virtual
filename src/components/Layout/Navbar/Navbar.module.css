@@ -59,12 +59,20 @@
   border-radius: 15px;
 }
 
+.search input:focus + .search {
+  outline: 1px solid red;
+}
+
 .search input {
   width: 35em;
   padding-inline: 0.5em;
   background-color: transparent;
   color: #ffffff;
   border: none;
+}
+
+.search input:focus {
+  outline: none;
 }
 
 .user {

@@ -11,8 +11,8 @@ export default function CartProduct() {
   }
 
   function handleBlur(e: React.FocusEvent<HTMLInputElement>) {
-    if (Number(e.target.value) < 0) {
-      setQtd(0);
+    if (Number(e.target.value) < 1) {
+      setQtd(1);
     }
   }
 
@@ -24,7 +24,7 @@ export default function CartProduct() {
           <Image
             src='https://m.media-amazon.com/images/I/41z1nkZ7cvL._AC_SR400,600_.jpg'
             width={420}
-            height={200}
+            height={420}
             alt=''
           />
 
@@ -38,7 +38,7 @@ export default function CartProduct() {
             value={qtd}
             onChange={handleChange}
             onBlur={handleBlur}
-            min={0}
+            min={1}
           />
           <button>remover</button>
         </div>
