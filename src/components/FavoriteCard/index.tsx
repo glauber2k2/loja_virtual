@@ -23,7 +23,7 @@ export default function FavoriteCard({ id }: CardProps) {
     price: 0,
   });
 
-  const [hearthIcon, setHearthIcon] = useState(false);
+  const [hearthIcon, setHearthIcon] = useState(true);
 
   useEffect(() => {
     fetch(`http://localhost:5000/products/${id}`, {
@@ -39,11 +39,43 @@ export default function FavoriteCard({ id }: CardProps) {
       .catch((err) => console.log(err));
   }, [id]);
 
-  function handleChangeColorIcon() {
-    setHearthIcon(Boolean(!hearthIcon));
-    console.log(product);
-  }
+  function handleChangeFavoriteState() {
+    setHearthIcon(!hearthIcon);
 
+    fetch(`http://localhost:5000/users/1`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        let updatedFavorites;
+        const isItemInFavorites = data.favorites.some(
+          (f: CardProps) => f.id === id
+        );
+
+        if (isItemInFavorites) {
+          updatedFavorites = data.favorites.filter(
+            (f: CardProps) => f.id !== id
+          );
+        } else {
+          updatedFavorites = [...data.favorites, { id }];
+        }
+
+        fetch(`http://localhost:5000/users/1`, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ favorites: updatedFavorites }),
+        })
+          .then((resp) => resp.json())
+          .then((data) => {})
+          .catch((err) => console.log(err));
+      })
+      .catch((err) => console.log(err));
+  }
   return (
     <>
       <div className={styles.container}>
@@ -61,11 +93,11 @@ export default function FavoriteCard({ id }: CardProps) {
         </div>
 
         <h4>R$ {product.price}</h4>
-        <button onClick={handleChangeColorIcon}>
+        <button onClick={handleChangeFavoriteState}>
           <Heart
             size={32}
-            weight={hearthIcon ? 'bold' : 'fill'}
-            color={hearthIcon ? '#00000059' : '#0066ff'}
+            weight={hearthIcon ? 'fill' : 'bold'}
+            color={hearthIcon ? '#0066ff' : '#00000059'}
           />
         </button>
       </div>

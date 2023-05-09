@@ -7,23 +7,22 @@
       "userName": "glauber.sm",
       "favorites": [
         {
-          "id": 1
+          "id": 3
+        },
+        {
+          "id": 4
         },
         {
           "id": 5
         },
         {
-          "id": 6
-        },
-        {
-          "id": 7
+          "id": 2
         }
       ],
       "shoppingCart": [],
       "id": 1
     }
   ],
-
   "products": [
     {
       "id": 1,
@@ -33,7 +32,6 @@
       "qtd": 500,
       "description": "Keychron Teclado mecânico K3 versão 2, 84 teclas, ultrafino, sem fio, Bluetooth/USB com fio com retroiluminação de LED branco, interruptor mecânico marrom Gateron de baixo perfil compatível com Mac Windows"
     },
-
     {
       "id": 2,
       "name": "Mouse Pad",
@@ -42,7 +40,6 @@
       "qtd": 500,
       "description": "Controle Dualshock 4 - PlayStation 4 - Preto"
     },
-
     {
       "id": 3,
       "name": "Monitor Gamer",
@@ -51,7 +48,6 @@
       "qtd": 500,
       "description": "Produto de excelente qualidade"
     },
-
     {
       "id": 4,
       "name": "Lego",
@@ -60,7 +56,6 @@
       "qtd": 500,
       "description": "Produto de excelente qualidade"
     },
-
     {
       "id": 5,
       "name": "Controle Dualshock 4 - PlayStation 4 - Preto",
@@ -69,7 +64,6 @@
       "qtd": 500,
       "description": "Produto de excelente qualidade"
     },
-
     {
       "id": 6,
       "name": "Adaptador Bluetooth para PC",
@@ -77,15 +71,6 @@
       "price": 150,
       "qtd": 500,
       "description": "Receptor Dongle Bluetooth 5.0 Adaptador sem fio para laptop compatível com Windows 10/8.1/8/7/XP para desktop, laptop, mouse, teclado, impressoras, fones de ouvido, alto-falantes"
-    },
-
-    {
-      "id": 7,
-      "name": "iClamper Energia 5 Tomadas - Filtro de Linha",
-      "photoUrl": "https://m.media-amazon.com/images/I/618MnyaygUL._AC_SX522_.jpg",
-      "price": 1500,
-      "qtd": 500,
-      "description": " Filtro de Linha + DPS - Preto, Comprimento do cabo de entrada: 1 m"
     }
   ]
 }
