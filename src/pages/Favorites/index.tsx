@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import FavoriteCard from '@/components/FavoriteCard';
+import FavoriteCard from '../../components/FavoriteCard';
 
 import styles from './Favorites.module.css';
 
@@ -26,10 +26,12 @@ export default function Favorites() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.FavoriteListen}>
       <h1>Seus Favoritos:</h1>
       {favorites.map((item: Favorite) => (
-        <FavoriteCard key={item.id} id={item.id} />
+        <>
+          <FavoriteCard key={item.id} id={item.id} />
+        </>
       ))}
     </div>
   );

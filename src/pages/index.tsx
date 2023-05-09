@@ -18,7 +18,7 @@ export default function Home() {
   });
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.about}>
         <Image src='/images/logo.png' width={420} height={420} alt='' />
         <main>
@@ -28,9 +28,9 @@ export default function Home() {
           </article>
         </main>
       </div>
-      <ProductSlide title='Top vendas' />
-      <ProductSlide title='Calçados' />
-      <ProductSlide title='Mais vendidos:' />
-    </>
+
+      <ProductSlide title='Eletronicos' type='electronics' />
+      <ProductSlide title='Livros' type='books' />
+    </div>
   );
 }

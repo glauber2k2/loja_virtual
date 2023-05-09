@@ -10,13 +10,10 @@
           "id": 3
         },
         {
-          "id": 4
+          "id": 9
         },
         {
           "id": 5
-        },
-        {
-          "id": 2
         }
       ],
       "shoppingCart": [],
@@ -30,7 +27,8 @@
       "photoUrl": "https://m.media-amazon.com/images/I/71KT0A6-cjL._AC_SX679_.jpg",
       "price": 799,
       "qtd": 500,
-      "description": "Keychron Teclado mecânico K3 versão 2, 84 teclas, ultrafino, sem fio, Bluetooth/USB com fio com retroiluminação de LED branco, interruptor mecânico marrom Gateron de baixo perfil compatível com Mac Windows"
+      "description": "Keychron Teclado mecânico K3 versão 2, 84 teclas, ultrafino, sem fio, Bluetooth/USB com fio com retroiluminação de LED branco, interruptor mecânico marrom Gateron de baixo perfil compatível com Mac Windows",
+      "category": "electronics"
     },
     {
       "id": 2,
@@ -38,7 +36,8 @@
       "photoUrl": "https://m.media-amazon.com/images/I/4140yn-0-eS._AC_.jpg",
       "price": 150,
       "qtd": 500,
-      "description": "Controle Dualshock 4 - PlayStation 4 - Preto"
+      "description": "Controle Dualshock 4 - PlayStation 4 - Preto",
+      "category": "Home"
     },
     {
       "id": 3,
@@ -46,7 +45,8 @@
       "photoUrl": "https://m.media-amazon.com/images/I/612wOq29kKL._AC_SL1000_.jpg",
       "price": 1500,
       "qtd": 500,
-      "description": "Produto de excelente qualidade"
+      "description": "Produto de excelente qualidade",
+      "category": "electronics"
     },
     {
       "id": 4,
@@ -54,7 +54,8 @@
       "photoUrl": "https://m.media-amazon.com/images/I/81AMRnY9HIL._AC_SX522_.jpg",
       "price": 200,
       "qtd": 500,
-      "description": "Produto de excelente qualidade"
+      "description": "Produto de excelente qualidade",
+      "category": "Home"
     },
     {
       "id": 5,
@@ -62,7 +63,8 @@
       "photoUrl": "https://m.media-amazon.com/images/I/51Ieq0twp+L._AC_SX522_.jpg",
       "price": 799,
       "qtd": 500,
-      "description": "Produto de excelente qualidade"
+      "description": "Produto de excelente qualidade",
+      "category": "electronics"
     },
     {
       "id": 6,
@@ -70,7 +72,107 @@
       "photoUrl": "https://m.media-amazon.com/images/I/61Xh3RM3KFL._AC_SX679_.jpg",
       "price": 150,
       "qtd": 500,
-      "description": "Receptor Dongle Bluetooth 5.0 Adaptador sem fio para laptop compatível com Windows 10/8.1/8/7/XP para desktop, laptop, mouse, teclado, impressoras, fones de ouvido, alto-falantes"
+      "description": "Receptor Dongle Bluetooth 5.0 Adaptador sem fio para laptop compatível com Windows 10/8.1/8/7/XP para desktop, laptop, mouse, teclado, impressoras, fones de ouvido, alto-falantes",
+      "category": "electronics"
+    },
+    {
+      "id": 7,
+      "name": "É Assim que Acaba: 1",
+      "photoUrl": "https://m.media-amazon.com/images/I/51i7kH+rh9L._SY344_BO1,204,203,200_.jpg",
+      "price": 37,
+      "qtd": 500,
+      "description": "Considerado o livro do ano, que virou febre no TikTok e sozinho já acumulou mais de um milhão de exemplares vendidos no Brasil. É assim que acaba é o romance mais pessoal da carreira de Colleen Hoover, discutindo temas como violência doméstica e abuso psicológico de forma sensível e direta. ",
+      "category": "books"
+    },
+    {
+      "id": 8,
+      "name": "Drácula Dark Edition",
+      "photoUrl": "https://m.media-amazon.com/images/I/51kYAhF49CL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "price": 61,
+      "qtd": 500,
+      "description": "Drácula, um clássico que ainda corre quente na veia de inúmeras gerações de leitores por todo o mundo e a mais celebrada narrativa de vampiros, continua a transcender fronteiras de tempo, espaço, história e memória. ",
+      "category": "books"
+    },
+    {
+      "id": 9,
+      "name": "Pai Rico, Pai Pobre",
+      "photoUrl": "https://m.media-amazon.com/images/I/519kRFUvDOL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "price": 44,
+      "qtd": 500,
+      "description": "Produto de excelente qualidade",
+      "category": "books"
+    },
+    {
+      "id": 10,
+      "name": "Do Mil ao Milhão.",
+      "photoUrl": "https://m.media-amazon.com/images/I/41TsvI70n9L._SX335_BO1,204,203,200_.jpg",
+      "price": 200,
+      "qtd": 500,
+      "description": "Produto de excelente qualidade",
+      "category": "books"
+    },
+    {
+      "id": 11,
+      "name": "Os segredos da mente milionária",
+      "photoUrl": "https://m.media-amazon.com/images/I/51+GR0xBMWL._SY344_BO1,204,203,200_.jpg",
+      "price": 34,
+      "qtd": 500,
+      "description": "Aprenda a enriquecer mudando seus conceitos sobre o dinheiro e adotando os hábitos das pessoas bem-sucedidas",
+      "category": "books"
+    },
+    {
+      "id": 12,
+      "name": "O poder da ação Capa comum",
+      "photoUrl": "https://m.media-amazon.com/images/I/51ilQPPPanL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "price": 19,
+      "qtd": 500,
+      "description": "Acorde para os objetivos que quer conquistar. Já aconteceu a você de se olhar no espelho e não gostar daqueles quilos a mais? De observar seu momento profissional somente com frustração?",
+      "category": "books"
+    },
+    {
+      "id": 13,
+      "name": "Cofre Eletrônico Digital Teclado Com Senha",
+      "photoUrl": "https://m.media-amazon.com/images/I/71jH8qTAa7L._AC_SX569_.jpg",
+      "price": 189,
+      "qtd": 500,
+      "description": "Cofre Eletrônico Digital Teclado Com Senha + 2 Chaves To17",
+      "category": "electronics"
+    },
+    {
+      "id": 14,
+      "name": "Headphone Fone de Ouvido Havit HV-H2232d",
+      "photoUrl": "https://m.media-amazon.com/images/I/51D+ONryiEL._AC_SX679_.jpg",
+      "price": 120,
+      "qtd": 500,
+      "description": "Headphone Fone de Ouvido Havit HV-H2232d, Gamer, Iluminação RGB, com Microfone, Falante de 50mm, Conector 3.5mm, HAVIT, HV-H2232d",
+      "category": "electronics"
+    },
+    {
+      "id": 15,
+      "name": "Monitor Gamer",
+      "photoUrl": "https://m.media-amazon.com/images/I/612wOq29kKL._AC_SL1000_.jpg",
+      "price": 1500,
+      "qtd": 500,
+      "description": "Produto de excelente qualidade",
+      "category": "electronics"
+    },
+    {
+      "id": 16,
+      "name": "O ladrão de raios: Capa nova: 1",
+      "photoUrl": "https://m.media-amazon.com/images/I/51yvcUb5tFL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "price": 45,
+      "qtd": 500,
+      "description": "Primeiro volume da saga Percy Jackson e os olimpianos, O ladrão de raios esteve entre os primeiros lugares na lista das séries mais vendidas do The New York Times.",
+      "category": "books"
+    },
+    {
+      "id": 17,
+      "name": "Harry Potter e a Pedra Filosofal: 1",
+      "photoUrl": "https://m.media-amazon.com/images/I/41897yAI4LL._SX346_BO1,204,203,200_.jpg",
+      "price": 799,
+      "qtd": 500,
+      "description": "arry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo.",
+      "category": "books"
     }
   ]
 }

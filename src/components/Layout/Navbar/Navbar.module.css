@@ -109,14 +109,15 @@
   }
 
   .search input {
-    width: 7em;
+    width: 5em;
     padding-inline: 0.5em;
     background-color: transparent;
     color: #ffffff;
     border: none;
   }
+
   .user {
-    gap: 1em;
+    gap: 0.8em;
   }
 
   .user a {

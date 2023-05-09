@@ -3,14 +3,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
-.container_item h3 {
-  width: 90%;
+.titleAndValue {
+  min-height: 4em;
+  background-color: #0066ff2f;
+  color: #000;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 12px;
 }
-.container_item h3 span {
-  float: right;
+.titleAndValue h4 {
+  color: #0066ff;
 }
 
 .imageContainer {
@@ -18,43 +22,46 @@
   align-items: center;
   justify-content: center;
   padding: 1em;
-  width: 20em;
+  width: 100%;
   height: 10em;
 }
 
 .container_item img {
-  width: 70%;
+  width: 100%;
+  height: 100%;
   object-fit: scale-down;
 }
 
 @media (max-width: 768px) {
   .container_item {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+
     padding: 0;
   }
 
-  .container_item h3 {
-    text-align: start;
-    font-size: 12px;
-    width: 100%;
+  .titleAndValue {
+    min-height: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .container_item h3 span {
-    display: block;
-    float: none;
+  .titleAndValue h4 {
+    color: #0066ff;
   }
 
   .container_item img {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
   }
 
   .imageContainer {
     padding: 1em;
     width: 10em;
-    height: 5em;
+    height: 10em;
   }
 }

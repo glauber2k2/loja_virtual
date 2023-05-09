@@ -1,20 +1,55 @@
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import Product from '../Layout/Product';
+import { useState, useEffect } from 'react';
 
 import styles from './ProductSlide.module.css';
 
 interface slideProps {
   title: string;
+  type: string;
 }
 
-export default function ProductSlide({ title }: slideProps) {
+interface ProductProps {
+  id: number;
+  name: string;
+  photoUrl: string;
+  price: number;
+  category: string;
+}
+
+export default function ProductSlide({ title, type }: slideProps) {
+  const [products, setProducts] = useState<ProductProps[]>([]);
+  const [screen, setScreen] = useState(5.5);
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setScreen(2.5);
+    }
+  }, []);
+  useEffect(() => {
+    fetch(`http://localhost:5000/products`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        const homeProducts = data.filter(
+          (product: ProductProps) => product.category === type
+        );
+        console.log(homeProducts);
+        setProducts(homeProducts);
+      })
+      .catch((err) => console.log(err));
+  }, [type]);
+
   const [ref] = useKeenSlider<HTMLDivElement>({
     loop: true,
     mode: 'free-snap',
 
     slides: {
-      perView: 3.5,
+      perView: screen,
       spacing: 15,
     },
   });
@@ -24,61 +59,20 @@ export default function ProductSlide({ title }: slideProps) {
       <div className={styles.container}>
         <h1>{title}</h1>
         <div className={styles.products}>
-          <div ref={ref} className='keen-slider' style={{}}>
-            <div className='keen-slider__slide'>
-              <Product
-                src='https://m.media-amazon.com/images/I/51E57XX95kL._AC_SX695_.jpg'
-                name='Sapato Vans'
-                price='599'
-                alt='teste'
-              />
+          {products.length > 0 && ( // verifique se products não está vazio
+            <div ref={ref} className='keen-slider' style={{}}>
+              {products.map((item) => (
+                <div key={item.id} className='keen-slider__slide'>
+                  <Product
+                    src={item.photoUrl}
+                    name={item.name.slice(0, 30)}
+                    price={item.price}
+                    alt={item.name}
+                  />
+                </div>
+              ))}
             </div>
-
-            <div className='keen-slider__slide'>
-              <Product
-                src='https://m.media-amazon.com/images/I/61xSpcGMUhL.__AC_SX300_SY300_QL70_ML2_.jpg'
-                name='Monitor '
-                price='1.200'
-                alt='teste'
-              />
-            </div>
-
-            <div className='keen-slider__slide'>
-              <Product
-                src='https://m.media-amazon.com/images/I/81Yleainj1L._AC_SX522_.jpg'
-                name='SSD Kingston'
-                price='500'
-                alt='teste'
-              />
-            </div>
-
-            <div className='keen-slider__slide'>
-              <Product
-                src='https://m.media-amazon.com/images/I/818P+qYvSHS._AC_SX300_SY300_.jpg'
-                name='Impressora'
-                price='1.100'
-                alt='teste'
-              />
-            </div>
-
-            <div className='keen-slider__slide'>
-              <Product
-                src='https://m.media-amazon.com/images/I/61QUveKcmIL._AC_SX522_.jpg'
-                name='Monitor'
-                price='1.500'
-                alt='teste'
-              />
-            </div>
-
-            <div className='keen-slider__slide'>
-              <Product
-                src='https://m.media-amazon.com/images/I/61vdNn+737L._AC_SX522_.jpg'
-                name='Kit Periféricos'
-                price='200'
-                alt='teste'
-              />
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </>

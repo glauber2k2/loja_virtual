@@ -93,12 +93,11 @@ export default function FavoriteCard({ id }: CardProps) {
         </div>
 
         <h4>R$ {product.price}</h4>
-        <button onClick={handleChangeFavoriteState}>
-          <Heart
-            size={32}
-            weight={hearthIcon ? 'fill' : 'bold'}
-            color={hearthIcon ? '#0066ff' : '#00000059'}
-          />
+        <button
+          onClick={handleChangeFavoriteState}
+          className={hearthIcon ? styles.clicked : styles.notClicked}
+        >
+          <Heart size={32} weight='fill' />
         </button>
       </div>
     </>
