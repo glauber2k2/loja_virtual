@@ -6,7 +6,6 @@ import styles from './Favorites.module.css';
 
 interface Favorite {
   id: number;
-  produto: string;
 }
 export default function Favorites() {
   const [favorites, setFavorites] = useState([]);

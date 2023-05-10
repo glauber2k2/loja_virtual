@@ -7,13 +7,13 @@
       "userName": "glauber.sm",
       "favorites": [
         {
-          "id": 3
+          "id": 5
+        },
+        {
+          "id": 1
         },
         {
           "id": 9
-        },
-        {
-          "id": 5
         }
       ],
       "shoppingCart": [],

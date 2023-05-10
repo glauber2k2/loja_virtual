@@ -8,10 +8,9 @@
 
 .quantity {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .quantity input[type='number'] {
@@ -27,13 +26,14 @@
 }
 
 .quantity button {
-  font-weight: bold;
-  color: red;
+  cursor: pointer;
   background: none;
   border: none;
+  outline: none;
 }
 
 .product {
+  width: 40%;
   display: flex;
   gap: 2em;
   align-items: center;
@@ -41,8 +41,9 @@
 }
 
 .product img {
+  object-fit: scale-down;
   height: 100%;
-  width: 12%;
+  width: 20%;
 }
 
 .product p {
