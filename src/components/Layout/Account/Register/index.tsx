@@ -101,24 +101,28 @@ export default function Register() {
           name='user'
           placeholder='Digite seu usuário'
           onChange={handleChange}
+          autoComplete='off'
         />
         <input
           type='text'
           name='name'
           placeholder='Digite seu nome'
           onChange={handleChange}
+          autoComplete='off'
         />
         <input
           type='email'
           name='email'
           placeholder='Digite seu Email'
           onChange={handleChange}
+          autoComplete='off'
         />
         <input
           type='email'
           name='authEmail'
           placeholder='Confirme seu Email'
           onChange={handleChange}
+          autoComplete='off'
         />
         <div>
           <input
@@ -126,6 +130,7 @@ export default function Register() {
             name='password'
             placeholder='Digite sua senha'
             onChange={handleChange}
+            autoComplete='off'
           />
           <button
             type='button'

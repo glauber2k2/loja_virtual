@@ -5,13 +5,30 @@ import {
   Question,
   Heart,
 } from 'phosphor-react';
-
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import styles from './Navbar.module.css';
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
+  const [searchValue, setSearchValue] = useState<string>('');
+
+  const handleSearchInputChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    setSearchValue(event.target.value);
+  };
+
+  const handleSearchFormSubmit = (
+    event: React.FormEvent<HTMLFormElement>
+  ): void => {
+    event.preventDefault();
+    if (searchValue.trim()) {
+      window.location.href = `/Products?q=${searchValue.trim()}`;
+    }
+  };
+
   return (
     <nav className={styles.navbar_container}>
       <Link href='/' legacyBehavior>
@@ -20,10 +37,18 @@ export default function Navbar() {
           <h1>E-commerce</h1>
         </div>
       </Link>
-      <div className={styles.search}>
+      <form className={styles.search} onSubmit={handleSearchFormSubmit}>
         <MagnifyingGlass size={25} color='#fff' weight='bold' />
-        <input type='text' id='search' placeholder='Buscar...' />
-      </div>
+        <input
+          type='text'
+          value={searchValue}
+          onChange={handleSearchInputChange}
+          id='search'
+          placeholder='Buscar...'
+          autoComplete='off'
+        />
+        <button type='submit' style={{ display: 'none' }}></button>
+      </form>
       <div className={styles.user}>
         <Link href='/Account' legacyBehavior>
           <a>

@@ -28,9 +28,7 @@ export default function Favorites() {
     <div className={styles.FavoriteListen}>
       <h1>Seus Favoritos:</h1>
       {favorites.map((item: Favorite) => (
-        <>
-          <FavoriteCard key={item.id} id={item.id} />
-        </>
+        <FavoriteCard key={item.id} id={item.id} />
       ))}
     </div>
   );
