@@ -1,5 +1,8 @@
 .container {
-  margin-bottom: 10em;
+  padding: 5em 10em;
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-White-Wallpaper-Cloud.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container h1 {
@@ -13,14 +16,14 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 70%;
+  width: 100%;
 }
 
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .about img {
@@ -29,6 +32,10 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0em;
+  }
+
   .products {
     display: flex;
     justify-content: center;

@@ -83,7 +83,7 @@ export default function CartProduct({ id }: CardProps) {
       <div className={styles.container}>
         <div className={styles.product}>
           <Image
-            src={product.photoUrl || '/placeholder.png'}
+            src={product.photoUrl || '/images/loading.gif'}
             width={420}
             height={420}
             alt={product.name || 'Product'}

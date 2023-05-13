@@ -1,0 +1,17 @@
+.clicked {
+  color: #0066ff;
+  transition: 0.5s;
+}
+
+.notClicked {
+  color: #bbbbbb;
+  transition: 0.5s;
+}
+
+.clicked:hover {
+  color: #bbbbbb;
+}
+
+.notClicked:hover {
+  color: #0066ff;
+}

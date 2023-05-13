@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import { GetStaticPropsContext } from 'next';
+import FavoriteButton from '../../../components/buttons/FavoriteButton';
 
 import styles from './item.module.css';
 
@@ -55,14 +56,22 @@ export default function Item({ item }: ItemProps) {
       <div className={styles.Search}></div>
 
       <div className={styles.container}>
-        <Image
-          src={item.photoUrl ? item.photoUrl : ''}
-          width={420}
-          height={420}
-          alt={item.name ? item.name : ''}
-          className={styles.photoitem}
-        />
-        <h1>{item.name}</h1>
+        <div className={styles.productImage}>
+          <Image
+            src={item.photoUrl ? item.photoUrl : ''}
+            width={420}
+            height={420}
+            alt={item.name ? item.name : ''}
+            className={styles.photoItem}
+          />
+
+          <FavoriteButton id={item.id} />
+        </div>
+        <div className={styles.description}>
+          <h1>{item.name}</h1>
+          <h3>R$ {item.price}</h3>
+          <p>{item.description}</p>
+        </div>
       </div>
     </>
   );

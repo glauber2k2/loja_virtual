@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 import styles from './ProductSlide.module.css';
 
+const apiUrl = process.env.API_URL;
 interface slideProps {
   title: string;
   type: string;
@@ -23,7 +24,7 @@ export default function ProductSlide({ title, type }: slideProps) {
   const [screen, setScreen] = useState(5.5);
   useEffect(() => {
     if (window.innerWidth < 768) {
-      setScreen(2.5);
+      setScreen(1);
     }
   }, []);
   useEffect(() => {
@@ -50,7 +51,7 @@ export default function ProductSlide({ title, type }: slideProps) {
 
     slides: {
       perView: screen,
-      spacing: 15,
+      spacing: 10,
     },
   });
 
