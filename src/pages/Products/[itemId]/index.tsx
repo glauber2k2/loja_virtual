@@ -50,7 +50,7 @@ export default function Item({ item }: ItemProps) {
   return (
     <>
       <Head>
-        <title>{item.name?.split(' ')[0]} - Monteiro</title>
+        <title>{`${item.name?.split(' ')[0]} - Monteiro`}</title>
       </Head>
       <div className={styles.Search}></div>
 

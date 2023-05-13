@@ -68,6 +68,7 @@ export default function ProductSlide({ title, type }: slideProps) {
                     name={item.name.slice(0, 30)}
                     price={item.price}
                     alt={item.name}
+                    id={item.id}
                   />
                 </div>
               ))}

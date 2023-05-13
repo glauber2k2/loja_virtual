@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.container_item span {
+  cursor: pointer;
+}
+
 .titleAndValue {
   min-height: 4em;
   background-color: #0066ff2f;
