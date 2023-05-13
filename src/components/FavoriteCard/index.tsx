@@ -26,7 +26,7 @@ export default function FavoriteCard({ id }: CardProps) {
   const [hearthIcon, setHearthIcon] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`, {
+    fetch(`https://json-server-loja.vercel.app/products/${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ export default function FavoriteCard({ id }: CardProps) {
   function handleChangeFavoriteState() {
     setHearthIcon(!hearthIcon);
 
-    fetch(`http://localhost:5000/users/1`, {
+    fetch(`https://json-server-loja.vercel.app/users/1`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ export default function FavoriteCard({ id }: CardProps) {
           updatedFavorites = [...data.favorites, { id }];
         }
 
-        fetch(`http://localhost:5000/users/1`, {
+        fetch(`https://json-server-loja.vercel.app/users/1`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',

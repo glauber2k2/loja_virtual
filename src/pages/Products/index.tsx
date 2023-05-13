@@ -23,7 +23,7 @@ export default function Products() {
   }, [router.query]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/products', {
+    fetch('https://json-server-loja.vercel.app/products', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

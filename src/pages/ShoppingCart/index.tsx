@@ -10,7 +10,7 @@ export default function ShoppingCart() {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/1`, {
+    fetch(`https://json-server-loja.vercel.app/users/1`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

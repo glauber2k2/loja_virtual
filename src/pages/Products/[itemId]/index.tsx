@@ -20,7 +20,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
   const { params } = context;
 
   const data = await fetch(
-    `http://localhost:5000/products/${params?.itemId ?? ''}`
+    `https://json-server-loja.vercel.app/products/${params?.itemId ?? ''}`
   );
 
   const item = await data.json();
@@ -31,7 +31,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-  const response = await fetch('http://localhost:5000/products');
+  const response = await fetch('https://json-server-loja.vercel.app/products');
 
   const data = await response.json();
 
