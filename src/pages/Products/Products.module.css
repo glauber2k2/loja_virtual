@@ -1,0 +1,18 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container ul {
+  list-style-type: none;
+  display: flex;
+
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container li {
+  background-color: aqua;
+  width: 10rem;
+}
