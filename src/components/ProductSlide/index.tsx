@@ -66,7 +66,11 @@ export default function ProductSlide({ title, type }: slideProps) {
                 <div key={item.id} className='keen-slider__slide'>
                   <Product
                     src={item.photoUrl}
-                    name={item.name.slice(0, 30)}
+                    name={
+                      item.name.length < 35
+                        ? item.name
+                        : `${item.name.slice(0, 35)}...`
+                    }
                     price={item.price}
                     alt={item.name}
                     id={item.id}

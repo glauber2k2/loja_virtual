@@ -60,7 +60,13 @@ export default function Products() {
               <li key={product.id}>
                 <Product
                   src={product.photoUrl || '/images/loading.gif'}
-                  name={product.name || ''}
+                  name={
+                    product.name && product.name.length < 35
+                      ? product.name
+                      : product.name
+                      ? `${product.name.slice(0, 35)}...`
+                      : ''
+                  }
                   price={product.price || 0}
                   alt={product.name || ''}
                   id={product.id}
