@@ -15,11 +15,13 @@ interface Product {
 export default function Products() {
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true); // Definido como true inicialmente
+  const [search, setSearch] = useState('');
   const router = useRouter();
 
   useEffect(() => {
     const { q } = router.query;
     const searchValue = q ? q.toString() : '';
+    setSearch(searchValue);
 
     if (searchValue) {
       setIsLoading(true); // Define como true antes de buscar os resultados
@@ -51,19 +53,22 @@ export default function Products() {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        <ul>
-          {products.map((product) => (
-            <li key={product.id}>
-              <Product
-                src={product.photoUrl || '/images/loading.gif'}
-                name={product.name || ''}
-                price={product.price || 0}
-                alt={product.name || ''}
-                id={product.id}
-              />
-            </li>
-          ))}
-        </ul>
+        <>
+          <h1>resultados para: {search}</h1>
+          <ul>
+            {products.map((product) => (
+              <li key={product.id}>
+                <Product
+                  src={product.photoUrl || '/images/loading.gif'}
+                  name={product.name || ''}
+                  price={product.price || 0}
+                  alt={product.name || ''}
+                  id={product.id}
+                />
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </div>
   );
