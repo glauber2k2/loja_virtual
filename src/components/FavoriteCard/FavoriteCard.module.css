@@ -25,6 +25,10 @@
   gap: 2em;
   align-items: center;
   font-weight: bold;
+  mix-blend-mode: multiply;
+}
+.productImage {
+  background-color: transparent !important;
 }
 
 .product img {
