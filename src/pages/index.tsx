@@ -29,7 +29,6 @@ export default function Home() {
         </main>
       </div>
 
-      <ProductSlide title='Eletronicos' type='electronics' />
       <ProductSlide title='Livros' type='books' />
     </div>
   );

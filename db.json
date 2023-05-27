@@ -5,7 +5,20 @@
       "password": "123456",
       "email": "devglaubermonteiro@gmail.com",
       "userName": "glauber.sm",
-      "favorites": [],
+      "favorites": [
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 6
+        }
+      ],
       "shoppingCart": [
         {
           "id": 3

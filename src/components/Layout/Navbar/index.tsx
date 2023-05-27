@@ -52,28 +52,28 @@ export default function Navbar(): JSX.Element {
       <div className={styles.user}>
         <Link href='/Account' legacyBehavior>
           <a>
-            <Question size={32} color='#0066ff' weight='bold' />
+            <Question size={26} color='#0066ff' weight='bold' />
             <p>Suporte</p>
           </a>
         </Link>
 
         <Link href='/ShoppingCart' legacyBehavior>
           <a>
-            <ShoppingCartSimple size={32} color='#0066ff' weight='bold' />
+            <ShoppingCartSimple size={26} color='#0066ff' weight='bold' />
             <p>Carrinho</p>
           </a>
         </Link>
 
         <Link href='/Favorites' legacyBehavior>
           <a>
-            <Heart size={32} color='#0066ff' weight='bold' />
+            <Heart size={26} color='#0066ff' weight='bold' />
             <p>Favoritos</p>
           </a>
         </Link>
 
         <Link href='/Account' legacyBehavior>
           <a>
-            <User size={32} color='#0066ff' weight='bold' />
+            <User size={26} color='#0066ff' weight='bold' />
             <p>Entrar</p>
           </a>
         </Link>

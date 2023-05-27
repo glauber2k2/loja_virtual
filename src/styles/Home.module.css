@@ -3,6 +3,7 @@
   background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-White-Wallpaper-Cloud.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 91.5vh;
 }
 
 .container h1 {

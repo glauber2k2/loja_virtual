@@ -24,7 +24,9 @@ export default function ProductSlide({ title, type }: slideProps) {
   const [screen, setScreen] = useState(5.5);
   useEffect(() => {
     if (window.innerWidth < 768) {
-      setScreen(1);
+      setScreen(2.5);
+    } else if (window.innerWidth < 1300) {
+      setScreen(3.5);
     }
   }, []);
   useEffect(() => {
