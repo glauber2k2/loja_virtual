@@ -57,9 +57,9 @@ export default function CartProduct({ id }: CardProps) {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        let updatedCart;
-
-        updatedCart = data.shoppingCart.filter((f: CardProps) => f.id !== id);
+        let updatedCart = data.shoppingCart.filter(
+          (f: CardProps) => f.id !== id
+        );
 
         fetch(`https://json-server-loja.vercel.app/users/1`, {
           method: 'PATCH',
@@ -69,17 +69,20 @@ export default function CartProduct({ id }: CardProps) {
           body: JSON.stringify({ shoppingCart: updatedCart }),
         })
           .then((resp) => resp.json())
-          .then((data) => {})
-          .catch((err) => console.log(err));
+          .then((data) => {
+            // Realizar qualquer ação necessária após a exclusão do item
+            // Pode ser deixado vazio se não houver ação adicional
+          })
+          .catch((err) => console.log(err))
+          .finally(() => {
+            // Recarregar a página após a exclusão do item
+            location.reload();
+          });
       })
       .catch((err) => console.log(err));
-
-    location.reload();
   }
-
   return (
     <>
-      <hr />
       <div className={styles.container}>
         <div className={styles.product}>
           <Image
@@ -102,7 +105,7 @@ export default function CartProduct({ id }: CardProps) {
             min={1}
           />
           <button onClick={handleDeleteItem}>
-            <Trash size={22} color='#e61e1e' weight='bold' />
+            <Trash size={32} color='#e61e1e' weight='fill' />
           </button>
         </div>
 

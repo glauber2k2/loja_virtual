@@ -38,7 +38,7 @@ export default function Navbar(): JSX.Element {
         </div>
       </Link>
       <form className={styles.search} onSubmit={handleSearchFormSubmit}>
-        <MagnifyingGlass size={25} color='#fff' weight='bold' />
+        <MagnifyingGlass size={25} color='#fff' weight='duotone' />
         <input
           type='text'
           value={searchValue}
@@ -52,28 +52,28 @@ export default function Navbar(): JSX.Element {
       <div className={styles.user}>
         <Link href='/Account' legacyBehavior>
           <a>
-            <Question size={26} color='#0066ff' weight='bold' />
+            <Question size={26} color='#0066ff' weight='fill' />
             <p>Suporte</p>
           </a>
         </Link>
 
         <Link href='/ShoppingCart' legacyBehavior>
           <a>
-            <ShoppingCartSimple size={26} color='#0066ff' weight='bold' />
+            <ShoppingCartSimple size={26} color='#0066ff' weight='fill' />
             <p>Carrinho</p>
           </a>
         </Link>
 
         <Link href='/Favorites' legacyBehavior>
           <a>
-            <Heart size={26} color='#0066ff' weight='bold' />
+            <Heart size={26} color='#0066ff' weight='fill' />
             <p>Favoritos</p>
           </a>
         </Link>
 
         <Link href='/Account' legacyBehavior>
           <a>
-            <User size={26} color='#0066ff' weight='bold' />
+            <User size={26} color='#0066ff' weight='fill' />
             <p>Entrar</p>
           </a>
         </Link>

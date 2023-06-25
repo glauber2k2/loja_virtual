@@ -15,14 +15,11 @@ export default function Product({ id, src, price, name, alt }: ItemProps) {
   return (
     <div className={styles.container_item}>
       <Link href={`/Products/${id}`} legacyBehavior>
-        <span>
-          <div className={styles.imageContainer}>
-            <Image src={src} alt={alt} width={1280} height={1280} />
-          </div>
+        <span className={styles.content}>
+          <Image src={src} alt={alt} width={1280} height={1280} />
 
-          <div className={styles.titleAndValue}>
-            <h4>{name}</h4> <span>R$ {price}</span>
-          </div>
+          <h4>{name.length > 35 ? `${name.slice(0, 35)}...` : name}</h4>
+          <span>R$ {price},00</span>
         </span>
       </Link>
     </div>
