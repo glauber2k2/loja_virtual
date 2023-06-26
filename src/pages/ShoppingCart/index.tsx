@@ -26,11 +26,32 @@ export default function ShoppingCart() {
   return (
     <div className={styles.container}>
       <h1>Seu Carrinho:</h1>
-      {cart.map((item: Cart) => (
-        <>
-          <CartProduct key={item.id} id={item.id} />
-        </>
-      ))}
+      <div className={styles.cart}>
+        {cart.map((item: Cart) => (
+          <>
+            <CartProduct key={item.id} id={item.id} />
+          </>
+        ))}
+      </div>
+      <div className={styles.total}>
+        <h1>Efetuar compra:</h1>
+        <p>
+          Valor da compra: <span>R$ 00,00</span>
+        </p>
+        <label htmlFor='frete'>Calcular frete:</label>
+        <input type='text' placeholder='Digite seu CEP' />
+
+        <label htmlFor='cupom'>Cupom de desconto:</label>
+        <input type='text' placeholder='Digite seu cupom' />
+
+        <button>APLICAR</button>
+
+        <div className={styles.cost}>
+          <span>Valor total:</span>
+          <span>R$ 00,00</span>
+        </div>
+        <button>Efetuar compra</button>
+      </div>
     </div>
   );
 }

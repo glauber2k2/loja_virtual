@@ -5,8 +5,7 @@
   padding: 2em 0;
   height: 15em;
   backdrop-filter: blur(10px); /* Aplica o blur no fundo do container */
-  background: rgba(235, 235, 235, 0.425);
-  border-radius: 20px;
+  background: #ebebeb6c;
   margin-bottom: 1%;
 }
 
@@ -24,11 +23,11 @@
 .quantity input[type='number'] {
   width: 32px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
   user-select: none;
   background: transparent;
-  font-size: 1.1vw;
+  font-size: 1.1rem;
 }
 
 .quantity input[type='number']:focus {
@@ -58,11 +57,31 @@
 }
 
 .product p {
-  font-weight: bold;
+  font-weight: 500;
   width: 12em;
-  font-size: 1.1vw;
+  font-size: 1.3rem;
 }
 
 .container h4 {
-  font-size: 1.1vw;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .quantity {
+    gap: 0em;
+  }
+
+  .product img {
+    width: 50%;
+  }
+
+  .product p {
+    font-size: 0.6rem;
+  }
+
+  .container h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 }

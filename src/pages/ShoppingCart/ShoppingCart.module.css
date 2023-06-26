@@ -1,9 +1,91 @@
 .container {
+  display: flex;
   padding: 2em;
+  gap: 2%;
+  flex-wrap: wrap;
 }
 
 .container h1 {
-  text-align: center;
   margin-bottom: 2rem;
-  font-size: 2vw;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.cart {
+  width: 58%;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 40%;
+  height: 75vh;
+  background: #ebebeb6c;
+}
+
+.total h1 {
+  font-weight: 300;
+  width: 100%;
+  border-bottom: 2px solid #0000000d;
+  padding-bottom: 2rem;
+}
+
+.total p {
+  width: 100%;
+}
+
+.total p span {
+  float: right;
+}
+
+.total label {
+  margin: 5% 0 1% 0;
+  font-weight: 600;
+}
+
+.total input {
+  outline: none;
+  border: none;
+  padding: 1%;
+}
+
+.total button {
+  margin-top: 2%;
+  background-color: #0066ff;
+  width: 8rem;
+  padding: 1%;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+
+.total button:last-child {
+  margin-top: 2%;
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 0%;
+  margin-top: auto;
+}
+
+.cost {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #0000000d;
+  padding-top: 5%;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cart,
+  .total {
+    width: 100%;
+  }
 }

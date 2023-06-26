@@ -1,0 +1,7 @@
+Atualizacoes a fazer: 
+
+[X] Redesign carrinho.
+
+[ ] Menu Hamburguer Navbar.
+[ ] Redesign Favoritos.
+[ ] Redesign Home.
