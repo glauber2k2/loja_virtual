@@ -5,14 +5,16 @@ import {
   Question,
   Heart,
 } from 'phosphor-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import styles from './Navbar.module.css';
+import Menu from '../Menu';
 
 export default function Navbar(): JSX.Element {
   const [searchValue, setSearchValue] = useState<string>('');
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const handleSearchInputChange = (
     event: React.ChangeEvent<HTMLInputElement>
@@ -28,6 +30,23 @@ export default function Navbar(): JSX.Element {
       window.location.href = `/Products?q=${searchValue.trim()}`;
     }
   };
+
+  useEffect(() => {
+    const handleWindowResize = (): void => {
+      const width = window.innerWidth;
+      setIsMobile(width < 768);
+    };
+
+    handleWindowResize(); // Executa a função uma vez no momento da montagem
+
+    // Adiciona um event listener para lidar com a alteração de tamanho da janela
+    window.addEventListener('resize', handleWindowResize);
+
+    // Remove o event listener quando o componente é desmontado
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
 
   return (
     <nav className={styles.navbar_container}>
@@ -49,35 +68,40 @@ export default function Navbar(): JSX.Element {
         />
         <button type='submit' style={{ display: 'none' }}></button>
       </form>
-      <div className={styles.user}>
-        <Link href='/Account' legacyBehavior>
-          <a>
-            <Question size={26} color='#0066ff' weight='fill' />
-            <p>Suporte</p>
-          </a>
-        </Link>
 
-        <Link href='/ShoppingCart' legacyBehavior>
-          <a>
-            <ShoppingCartSimple size={26} color='#0066ff' weight='fill' />
-            <p>Carrinho</p>
-          </a>
-        </Link>
+      {!isMobile && (
+        <div className={styles.user}>
+          <Link href='/Account' legacyBehavior>
+            <a>
+              <Question size={26} color='#0066ff' weight='fill' />
+              <p>Suporte</p>
+            </a>
+          </Link>
 
-        <Link href='/Favorites' legacyBehavior>
-          <a>
-            <Heart size={26} color='#0066ff' weight='fill' />
-            <p>Favoritos</p>
-          </a>
-        </Link>
+          <Link href='/ShoppingCart' legacyBehavior>
+            <a>
+              <ShoppingCartSimple size={26} color='#0066ff' weight='fill' />
+              <p>Carrinho</p>
+            </a>
+          </Link>
 
-        <Link href='/Account' legacyBehavior>
-          <a>
-            <User size={26} color='#0066ff' weight='fill' />
-            <p>Entrar</p>
-          </a>
-        </Link>
-      </div>
+          <Link href='/Favorites' legacyBehavior>
+            <a>
+              <Heart size={26} color='#0066ff' weight='fill' />
+              <p>Favoritos</p>
+            </a>
+          </Link>
+
+          <Link href='/Account' legacyBehavior>
+            <a>
+              <User size={26} color='#0066ff' weight='fill' />
+              <p>Entrar</p>
+            </a>
+          </Link>
+        </div>
+      )}
+
+      {isMobile && <Menu />}
     </nav>
   );
 }

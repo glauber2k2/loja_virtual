@@ -7,7 +7,7 @@
 
 .container h1 {
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   width: 100%;
 }
@@ -21,7 +21,7 @@
   flex-direction: column;
   padding: 2rem;
   width: 40%;
-  height: 75vh;
+  height: 100%;
   background: #ebebeb6c;
 }
 
@@ -75,7 +75,7 @@
   display: flex;
   justify-content: space-between;
   border-top: 2px solid #0000000d;
-  padding-top: 5%;
+  padding-top: 10%;
   font-weight: bold;
 }
 
