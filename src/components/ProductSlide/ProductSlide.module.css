@@ -1,7 +1,6 @@
 .container {
   background: #d4d4d44f;
   backdrop-filter: blur(10px);
-  border-radius: 20px;
   padding: 2em 0;
   margin-bottom: 1em;
 }

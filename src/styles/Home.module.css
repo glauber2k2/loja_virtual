@@ -1,11 +1,6 @@
 .container {
   padding: 5em 10em;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    133deg,
-    rgba(255, 255, 255, 1) 41%,
-    rgba(0, 95, 255, 1) 100%
-  );
+  background: #ffffff;
   min-height: 91.5vh;
 }
 
@@ -28,12 +23,13 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
+  background: #121212;
+  color: #fff;
 }
 
 .about img {
   width: 25em;
   height: 20em;
-  filter: drop-shadow(2px 2px 2px #0a2c88);
 }
 
 @media (max-width: 768px) {
