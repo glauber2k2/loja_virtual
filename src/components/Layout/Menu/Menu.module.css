@@ -12,7 +12,6 @@
   backdrop-filter: blur(50px);
   z-index: 999;
   padding: 5%;
-  border: 2px solid rgb(232, 232, 232);
 }
 
 .closeMenu,
@@ -48,4 +47,5 @@
   text-decoration: none;
   color: #0066ff;
   letter-spacing: 2px;
+  font-weight: 600;
 }

@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  height: 10vh;
 }
 
 .title {
@@ -78,6 +79,7 @@
   background-color: transparent;
   color: #ffffff;
   border: none;
+  position: relative;
 }
 
 .search input:focus {
@@ -99,6 +101,23 @@
   color: #0066ff;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
+}
+
+.user a::after {
+  background-color: #0066ff;
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.1s ease-in-out;
+}
+
+.user a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 768px) {

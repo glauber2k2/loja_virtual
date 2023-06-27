@@ -63,7 +63,7 @@ export default function Navbar(): JSX.Element {
           value={searchValue}
           onChange={handleSearchInputChange}
           id='search'
-          placeholder='Buscar...'
+          placeholder='Buscar produto...'
           autoComplete='off'
         />
         <button type='submit' style={{ display: 'none' }}></button>
