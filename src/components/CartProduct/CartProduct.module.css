@@ -6,7 +6,7 @@
   height: 15em;
   backdrop-filter: blur(10px); /* Aplica o blur no fundo do container */
   background: #ebebeb6c;
-  margin-bottom: 1%;
+  margin-bottom: 1rem;
 }
 
 .quantity {
