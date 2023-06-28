@@ -27,20 +27,32 @@ export default function ShoppingCart() {
   }, []);
 
   useEffect(() => {
-    cart.forEach((item) => {
-      fetch(`https://json-server-loja.vercel.app/products/${item.id}`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-        .then((resp) => resp.json())
-        .then((data) => {
-          setPrice((prevPrices) => [...prevPrices, data.price]);
-          console.log(data.price);
-        })
-        .catch((err) => console.log(err));
-    });
+    const fetchPrices = async () => {
+      try {
+        const pricePromises = cart.map((item) => {
+          return fetch(
+            `https://json-server-loja.vercel.app/products/${item.id}`,
+            {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+            }
+          ).then((resp) => resp.json());
+        });
+
+        const prices = await Promise.all(pricePromises);
+        const priceValues = prices.map((data) => data.price);
+        setPrice(priceValues);
+        console.log(priceValues);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    if (cart.length > 0) {
+      fetchPrices();
+    }
   }, [cart]);
 
   const totalPrice = price.reduce(
@@ -53,9 +65,7 @@ export default function ShoppingCart() {
       <h1>Seu Carrinho:</h1>
       <div className={styles.cart}>
         {cart.map((item: Cart) => (
-          <>
-            <CartProduct key={item.id} id={item.id} />
-          </>
+          <CartProduct key={item.id} id={item.id} />
         ))}
       </div>
       <div className={styles.total}>
@@ -73,7 +83,7 @@ export default function ShoppingCart() {
 
         <div className={styles.cost}>
           <span>Valor total:</span>
-          <span>R$ 00,00</span>
+          <span>R$ {totalPrice}</span>
         </div>
         <button>Efetuar compra</button>
       </div>
