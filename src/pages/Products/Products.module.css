@@ -1,20 +1,23 @@
 .container {
   padding: 2rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 1rem;
+}
+
+.container h1 {
+  width: 100%;
+  text-align: center;
 }
 
 .container ul {
   list-style-type: none;
   display: flex;
-
   gap: 1rem;
   flex-wrap: wrap;
 }
 
 .container li {
-  background-color: rgba(196, 196, 196, 0.288);
-  width: 10rem;
+  border: 1px solid black;
+  width: 15rem;
 }
